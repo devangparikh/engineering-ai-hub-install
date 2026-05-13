@@ -1,0 +1,22 @@
+{
+  "cluster_url": "https://api.cluster.example.com:6443",
+  "token": "<KEY>",
+  "namespace": "my-project",
+  "software_name": "my-app",
+  "software_image": "nginx",
+  "software_version": "latest",
+  "replicas": 2,
+  "port": 8080,
+  "environment_vars": {
+    "ENV": "production",
+    "LOG_LEVEL": "info"
+  },
+  "resource_limits": {
+    "cpu": "1000m",
+    "memory": "1Gi"
+  },
+  "resource_requests": {
+    "cpu": "500m",
+    "memory": "512Mi"
+  }
+}
